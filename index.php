@@ -8,8 +8,12 @@
 </head>
 <body>
     <div class="container">
-        <div class="item a">
-            <?php 
+        <div class="item a"></div>
+
+
+            <div class="item b"></div>
+            <div class="item c">
+                            <?php 
             $servername = 'localhost';
             $username = 'root';
             $password = '';
@@ -31,7 +35,9 @@
 
             echo("</table>");
             ?>
-        </div>
+            </div>
+            <div class="item d"></div>
+            <div class="item e"></div>
     </div>
 </body>
 </html>

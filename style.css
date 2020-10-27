@@ -9,17 +9,40 @@ body{
 
 .a{
     grid-area: a;
+
+    background-color: khaki;
+}
+
+.b{
+    grid-area:b;
+    background-color: lightgreen;
+}
+
+.c{
+    grid-area:c;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: khaki;
+    background-color: lightgreen;
+}
+
+.d{
+    grid-area:d;
+    background-color: lightgreen;
+}
+
+.e{
+    grid-area:e;
+    background-color: lightgreen;
 }
 
 .container{
     display: grid;
     height: 100vh;
     border: 1px solid black;
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
-    grid-template-areas: "a";
+    grid-template-columns: 35% 30% 35%;
+    grid-template-rows: 35% 30% 35%;
+    grid-template-areas: "a a a"
+    "b c d"
+    "e e e";
 }
