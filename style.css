@@ -9,7 +9,9 @@ body{
 
 .a{
     grid-area: a;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: khaki;
 }
 
