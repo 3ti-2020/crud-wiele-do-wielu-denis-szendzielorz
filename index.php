@@ -15,19 +15,15 @@
 
             <div class="item b">
 
-            <form action="insert_autor.php" method="POST">
-            Nazwisko:
-            <input type="text" name="name" ><br/>
-            <input type="submit" value="dodaj">
+            <form action="insert_autor.php" method="post">
+            <input type="text" name="name" id="name" placeholder="name">
+            <input type="submit" value="Dodaj autora">
             </form>
-
-            <br/><br>
-            <form action="insert_tytul.php" method="POST">
-            Tytul:
-            <input type="text" name="tytul" ><br/>
-            <input type="submit" value="dodaj">
+    
+            <form action="insert_tytul.php" method="post">
+            <input type="text" name="tytul" id="tytul" placeholder="tytul">
+            <input type="submit" value="Dodaj tytul">
             </form>
-            </div>
 
 
             <div class="item c">

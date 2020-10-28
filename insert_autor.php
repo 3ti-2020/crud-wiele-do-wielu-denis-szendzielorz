@@ -4,9 +4,9 @@
     $password = 'gwQeUeTr6F';
     $dbname = 'sql7373150';
 
-    $conn= new mysqli($servername,$username,$password,$dbname);
+    $conn = new mysqli($servername, $username, $password, $dbname);
 
-    $sql="INSERT INTO `lib_autor`(`id_autor`, `name`) VALUES (NULL,'".$_POST['name']."') ;";
+    $sql= "INSERT INTO `lib_autor`(`name`) VALUES ('".$_POST['name']."')";
 
     mysqli_query($conn, $sql);
 
