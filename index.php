@@ -9,11 +9,27 @@
 <body>
     <div class="container">
         <div class="item a">
-            <h1>Denis Szendzielorz</h1>
+            <h1>Denis Szendzielorz grupa 2</h1>
         </div>
 
 
-            <div class="item b"></div>
+            <div class="item b">
+
+            <form action="insert_autor.php" method="POST">
+            Nazwisko:
+            <input type="text" name="name" ><br/>
+            <input type="submit" value="dodaj">
+            </form>
+
+            <br/><br>
+            <form action="insert_tytul.php" method="POST">
+            Tytul:
+            <input type="text" name="tytul" ><br/>
+            <input type="submit" value="dodaj">
+            </form>
+            </div>
+
+
             <div class="item c">
             <?php 
             $servername = 'sql7.freemysqlhosting.net';
