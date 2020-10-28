@@ -25,7 +25,7 @@
             <input type="submit" value="Dodaj tytul">
             </form>
 
-
+</div>
             <div class="item c">
             <?php 
             $servername = 'sql7.freemysqlhosting.net';
