@@ -16,10 +16,10 @@
             <div class="item b"></div>
             <div class="item c">
                             <?php 
-            $servername = 'localhost';
-            $username = 'root';
-            $password = '';
-            $dbname = 'dom';
+            $servername = 'sql7.freemysqlhosting.net';
+            $username = 'sql7373150';
+            $password = 'sql7373150';
+            $dbname = 'sql7373150';
 
             $conn = new mysqli($servername, $username, $password,$dbname);
             $result = $conn->query("SELECT `id_autor_tytul`, `name`, `tytul` FROM lib_tyt, lib_aut_tyt, lib_autor where lib_autor.id_autor = lib_aut_tyt.id_autor and lib_tyt.id_tytul = lib_aut_tyt.id_tytul");
