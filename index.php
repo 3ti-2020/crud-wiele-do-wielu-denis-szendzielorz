@@ -15,10 +15,10 @@
 
             <div class="item b"></div>
             <div class="item c">
-                            <?php 
+            <?php 
             $servername = 'sql7.freemysqlhosting.net';
             $username = 'sql7373150';
-            $password = 'sql7373150';
+            $password = 'gwQeUeTr6F';
             $dbname = 'sql7373150';
 
             $conn = new mysqli($servername, $username, $password,$dbname);
