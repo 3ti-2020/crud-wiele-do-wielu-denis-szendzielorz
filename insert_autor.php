@@ -6,7 +6,7 @@
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 
-    $sql= "INSERT INTO `lib_autor`(`name`) VALUES ('".$_POST['name']."')";
+    $sql= "INSERT INTO `lib_autor`(`id_tytul`,`name`) VALUES (NULL,'".$_POST['name']."')";
 
     mysqli_query($conn, $sql);
 
