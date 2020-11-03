@@ -38,5 +38,5 @@ $sql_aut_tyt = "INSERT INTO `lib_aut_tyt`(`id_autor_tytul`, `id_autor`, `id_tytu
 
 $query3 = mysqli_query($conn, $sql_aut_tyt);
 }
-header('Location: https://denis-szendzielorz.herokuapp.com/')
+header('Location: index.php')
 ?>
