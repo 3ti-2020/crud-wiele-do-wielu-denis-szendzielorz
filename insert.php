@@ -28,7 +28,7 @@ while($row1 = $result1->fetch_assoc()){
     $autorid = $row1['id_autor'];
 };
 
-    $id_tytul = "SELECT id_tytul FROM `lib_tytul` WHERE tytul='$tytul'";
+    $id_tytul = "SELECT id_tytul FROM `lib_tyt` WHERE tytul='$tytul'";
     $result2 = $conn->query($id_tytul);
 while($row2 = $result2->fetch_assoc()){
     $tytulid = $row2['id_tytul'];
