@@ -19,6 +19,7 @@
             <input type="text" name="nazw"  placeholder="nazw">
             <input type="text" name="tytul"  placeholder="tytul">
             <input type="submit" value="Dodaj">
+            </form>
 
 </div>
             <div class="item c">
