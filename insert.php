@@ -22,7 +22,7 @@ while ($row = $result->fetch_assoc()) {
     $tytulId = $row["LAST_INSERT_ID()"];
 }
 
-$sql=" INSERT INTO lib_autor_tytul (id_autor_tytul, id_autor,id_tytul) values (NULL, $autorId, $tytulId)";
+$sql=" INSERT INTO lib_aut_tyt (id_autor_tytul, id_autor,id_tytul) values (NULL, $autorId, $tytulId)";
 
 mysqli_query($conn, $sql);
 
