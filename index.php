@@ -16,8 +16,8 @@
             <div class="item b">
 
             <form action="insert.php" method="POST">
-            <input type="text" name="nazwa"  placeholder="nazwa">
-            <input type="text" name="tytul"  placeholder="tytul">
+            <input type="text" name="name" >
+            <input type="text" name="tytul" >
             <input type="submit" value="Dodaj">
             </form>
 

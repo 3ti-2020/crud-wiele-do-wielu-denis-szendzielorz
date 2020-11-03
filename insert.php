@@ -7,31 +7,38 @@
  $conn = new mysqli($servername, $username, $password, $dbname);
 
 
-$sqlGetId = "SELECT LAST_INSERT_ID()";
+ $autor = $_POST['name'];
+ $tytul = $_POST['tytul'];
+ 
+ $sql_autor = "INSERT INTO `lib_autor`(`id_autor`, `imie`) VALUES (NULL,'$autor')";
+ 
+ $query1 = mysqli_query($conn, $sql_autor);
+ 
+ if($query1){
+ 
+     $sql_tytul = "INSERT INTO `lib_tyt`(`id_tytul`, `tytul`) VALUES (NULL,'$tytul')";
+ 
+     $query2 = mysqli_query($conn, $sql_tytul);
+ 
+ }
+ 
+ if($query2){
+    $id_autor = "SELECT id_autor FROM `lib_autor` WHERE name='$autor'";
+    $result1 = $conn->query($id_autor);
 
-$sql=" INSERT INTO lib_autor (id_autor, name) values (NULL, '".$_POST['nazwa']."') ";
-mysqli_query($conn, $sql);
+ while($row1 = $result1->fetch_assoc()){
+     $autorid = $row1['id_autor'];
+ };
+ 
+    $id_tytul = "SELECT id_tytul FROM `lib_tyt` WHERE tytul='$tytul'";
+    $result2 = $conn->query($id_tytul);
 
-$result = mysqli_query($conn, $sqlGetId);
-
-
-while ($row = $result->fetch_assoc()) {
-    $autorId = $row["LAST_INSERT_ID()"];
-}
-
-$sql=" INSERT INTO lib_tyt (id_tytul, tytul) values (NULL, '".$_POST['tytul']."') ";
-mysqli_query($conn, $sql);
-
-$result = mysqli_query($conn, $sqlGetId);
-
-
-while ($row = $result->fetch_assoc()) {
-    $tytulId = $row["LAST_INSERT_ID()"];
-}
-
-$sql=" INSERT INTO lib_aut_tyt (id_autor_tytul, id_autor,id_tytul) values (NULL, $autorId, $tytulId)";
-
-mysqli_query($conn, $sql);
-
-header("Location:index.php");
+ while($row2 = $result2->fetch_assoc()){
+     $tytulid = $row2['id_tytul'];
+ };
+ 
+ $sql_aut_tyt = "INSERT INTO `lib_autor_tytul`(`id_autor_tytul`, `id_autor`, `id_tytul`) VALUES (NULL,'$autorid','$tytulid')";
+ 
+    $query3 = mysqli_query($conn, $sql_aut_tyt);
+    header("Location:index.php");
 ?>
