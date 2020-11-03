@@ -4,7 +4,7 @@
  $password = 'gwQeUeTr6F';
  $dbname = 'sql7373150';
 
-$conn = new mysqli($servername,$username,$password,$dbname);
+$conn = new mysqli('sql7.freemysqlhosting.net','sql7373150','gwQeUeTr6F','sql7373150');
 
 $name = $_POST['name'];
 $tytul = $_POST['tytul'];
@@ -38,5 +38,5 @@ $sql_aut_tyt = "INSERT INTO `lib_aut_tyt`(`id_autor_tytul`, `id_autor`, `id_tytu
 
 $query3 = mysqli_query($conn, $sql_aut_tyt);
 }
-header('Location: index.php')
+header('Location:index.php')
 ?>
