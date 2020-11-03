@@ -16,8 +16,8 @@
             <div class="item b">
 
             <form action="insert.php" method="POST">
-            <input type="text" name="name" id="name" placeholder="name">
-            <input type="text" name="tytul" id="tytul" placeholder="tytul">
+            <input type="text" name="nazw"  placeholder="nazw">
+            <input type="text" name="tytul"  placeholder="tytul">
             <input type="submit" value="Dodaj">
 
 </div>
@@ -29,13 +29,14 @@
             $dbname = 'sql7373150';
 
             $conn = new mysqli($servername, $username, $password,$dbname);
-            $result = $conn->query("SELECT `name`, `tytul` FROM lib_tyt, lib_aut_tyt, lib_autor where lib_autor.id_autor = lib_aut_tyt.id_autor and lib_tyt.id_tytul = lib_aut_tyt.id_tytul");
+            $result = $conn->query("SELECT `id_autor_tytul`,`name`, `tytul` FROM lib_tyt, lib_aut_tyt, lib_autor where lib_autor.id_autor = lib_aut_tyt.id_autor and lib_tyt.id_tytul = lib_aut_tyt.id_tytul");
             echo("<table class='tabela' border 1>");
             echo("<tr>
             <th></th></tr>");
 
             while($row = $result->fetch_assoc()){
                 echo("<tr>");
+                echo("<td>".$row['id_autor_tytul']."</td>");
                 echo("<td>".$row['name']."</td>");
                 echo("<td>".$row['tytul']."</td>");
                 echo("</tr>");
