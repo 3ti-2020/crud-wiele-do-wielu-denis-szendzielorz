@@ -40,7 +40,7 @@
 
  $sql3=" INSERT INTO lib_aut_tyt (`id_autor_tytul`, `id_autor`,`id_tytul`) values (NULL, '$autorid', '$tytulid')";
  
- mysqli_query($conn, $sql3);
+ $query3 = mysqli_query($conn, $sql3);
  
  header("Location:index.php");
  ?>
