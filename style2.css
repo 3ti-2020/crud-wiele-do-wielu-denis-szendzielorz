@@ -1,0 +1,93 @@
+body{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://www.moto3m.pl/wp-content/uploads/2018/04/Nowy-salon-samochod%C3%B3w-luksusowych-BW-Partners-w-Straszynie-0770.jpg");
+    background-size: cover;
+    background-position: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+
+
+.karta{
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 150px 150px 80px;
+    grid-template-areas: "a"
+    "b"
+    "c";
+
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    text-align: center;
+}
+
+.obr1{
+    grid-area: a;
+    background-image: url("https://www.carsmag.pl/wp-content/uploads/2017/08/bmw-i8-2017-promo.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.obr2{
+    grid-area: a;
+    background-image: url("https://cdn.carbuzz.com/gallery-images/1600/662000/0/662038.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.text h2{
+    margin-top: 0px;
+    font-size: 25px;
+}
+.text{
+    grid-area: b;
+    margin: 20px;
+
+}
+
+.stats{
+    grid-area: c;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: aqua;
+}
+
+.stats .stat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+}
+
+.stats .type{
+    font-size: 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.stats .value{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.stats .border{
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.karta:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
