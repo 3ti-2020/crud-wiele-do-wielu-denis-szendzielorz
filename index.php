@@ -10,7 +10,7 @@
     <div class="container">
         <div class="item a">
             <h1>Denis Szendzielorz grupa 2</h1>
-            <h3><a href="karty.html"></a></h3>
+            <h3><a href="karty.html">LINK</a></h3>
         </div>
 
 
