@@ -7,40 +7,31 @@
  $conn = new mysqli($servername, $username, $password, $dbname);
 
 
- $name = $_POST['name'];
- $tytul = $_POST['tytul'];
+$sqlGetId = "SELECT LAST_INSERT_ID()";
 
-    $sql_autor = "INSERT INTO `lib_autor`(`id_autor`, `name`) VALUES (NULL, '$name')";
+$sql=" INSERT INTO lib_autor (id_autor, name) values (NULL, '".$_POST['nazwa']."') ";
+mysqli_query($conn, $sql);
 
-    $query1 = mysqli_query($conn, $sql_autor);
+$result = mysqli_query($conn, $sqlGetId);
 
- if($query1){
 
-    $sql_tytul = "INSERT INTO `lib_tyt`(`id_tytul`, `tytul`) VALUES (NULL, '$tytul')";
+while ($row = $result->fetch_assoc()) {
+    $autorId = $row["LAST_INSERT_ID()"];
+}
 
-    $query2 = mysqli_query($conn, $sql_tytul);
+$sql=" INSERT INTO lib_tyt (id_tytul, tytul) values (NULL, '".$_POST['tytul']."') ";
+mysqli_query($conn, $sql);
 
- }
+$result = mysqli_query($conn, $sqlGetId);
 
- if($query2){
 
-    $id_autor = "SELECT id_autor FROM `lib_autor` WHERE name='$name' ";
-    $result1 = $conn->query($id_autor);
+while ($row = $result->fetch_assoc()) {
+    $tytulId = $row["LAST_INSERT_ID()"];
+}
 
-    while($row1 = $result1->fetch_assoc()){
-        $autorid = $row1['id_autor'];
+$sql=" INSERT INTO lib_aut_tyt (id_autor_tytul, id_autor,id_tytul) values (NULL, $autorId, $tytulId)";
 
-};
-    $id_tytul = "SELECT id_tytul FROM `lib_tytul` WHERE tytul='$tytul' ";
-    $result2 = $conn->query($id_tytul);
+mysqli_query($conn, $sql);
 
-    while($row2 = $result2->fetch_assoc()){
-        $tytulid = $row2['id_tytul'];
-};
-
- $sql3=" INSERT INTO lib_aut_tyt (`id_autor_tytul`, `id_autor`,`id_tytul`) values (NULL, '$autorid', '$tytulid')";
- 
- $query3 = mysqli_query($conn, $sql3);
- 
- header("Location:index.php");
- ?>
+header("Location:index.php");
+?>
