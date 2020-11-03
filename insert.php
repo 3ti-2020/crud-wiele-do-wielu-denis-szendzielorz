@@ -37,7 +37,7 @@
      $tytulid = $row2['id_tytul'];
  };
  
- $sql_aut_tyt = "INSERT INTO `lib_autor_tytul`(`id_autor_tytul`, `id_autor`, `id_tytul`) VALUES (NULL,'$autorid','$tytulid')";
+ $sql_aut_tyt = "INSERT INTO `lib_aut_tyt`(`id_autor_tytul`, `id_autor`, `id_tytul`) VALUES (NULL,'$autorid','$tytulid')";
  
     $query3 = mysqli_query($conn, $sql_aut_tyt);
     header("Location:index.php");
