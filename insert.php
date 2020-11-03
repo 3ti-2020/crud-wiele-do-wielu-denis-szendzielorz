@@ -7,10 +7,10 @@
  $conn = new mysqli($servername, $username, $password, $dbname);
 
 
- $autor = $_POST['autor'];
+ $name = $_POST['name'];
  $tytul = $_POST['tytul'];
 
-    $sql_autor = "INSERT INTO `lib_autor`(`id_autor`, `name`) VALUES (NULL, '$autor')";
+    $sql_autor = "INSERT INTO `lib_autor`(`id_autor`, `name`) VALUES (NULL, '$name')";
 
     $query1 = mysqli_query($conn, $sql_autor);
 
@@ -24,7 +24,7 @@
 
  if($query2){
 
-    $id_autor = "SELECT id_autor FROM `lib_autor` WHERE name='$autor' ";
+    $id_autor = "SELECT id_autor FROM `lib_autor` WHERE name='$name' ";
     $result1 = $conn->query($id_autor);
 
     while($row1 = $result1->fetch_assoc()){
