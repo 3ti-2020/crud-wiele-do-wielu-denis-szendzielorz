@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style2.css">
 </head>
 <body>
+<a class="aa" href="wyloguj.php">WYLOGUJ_SIE</a>
     <div class="karta">
         <div class="obr1"></div>
 
