@@ -12,7 +12,7 @@
 
             <h1>Denis Szendzielorz grupa 2</h1>
 
-            <br/>
+            </br>
 
             <h3><a href="karty.php">LINK</a></h3>
 
@@ -48,7 +48,7 @@
                 echo("<td>".$row['name']."</td>");
                 echo("<td>".$row['tytul']."</td>");
                 echo("<td><form action='delete.php' method='POST'>
-                            <input type='hidden' name='ID' value='$wiersz[id_autor_tytul]' placeholder='ID'></br>
+                            <input type='hidden' name='ID' value='$row[id_autor_tytul]' placeholder='ID'></br>
                             <input type='submit' value='Usun'> 
                         </form>
                     </td>");
