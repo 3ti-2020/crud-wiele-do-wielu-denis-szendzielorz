@@ -9,8 +9,15 @@
 <body>
     <div class="container">
         <div class="item a">
+        
+        <div class="tyt">
             <h1>Denis Szendzielorz grupa 2</h1>
+        </div>
+
+        <div class="link">
             <h3><a href="karty.php">LINK</a></h3>
+        </div>
+
         </div>
 
 

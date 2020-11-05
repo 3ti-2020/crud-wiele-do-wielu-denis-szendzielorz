@@ -12,12 +12,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: khaki;
 }
 
 .b{
     grid-area:b;
     background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .c{
