@@ -20,13 +20,13 @@
 
 
         <div class="item b">
-
-            <form action="insert.php" method="POST">
-            <input type="text" name="name" >
-            <input type="text" name="tytul" >
-            <input type="submit" value="Dodaj">
-            </form>
-
+                <ul>
+                    <form action="insert.php" method="POST">
+                    <li class="li"><input type="text" name="name" ></li>
+                    <li class="li"><input type="text" name="tytul" ></li>
+                    <li class="li"><input type="submit" value="Dodaj"></li>
+                    </form>
+                </ul>
         </div>
 
         <div class="item c">

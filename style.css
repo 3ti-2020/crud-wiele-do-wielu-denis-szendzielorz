@@ -44,7 +44,9 @@ body{
     align-items: center;
     flex-direction: column;
 }
-
+.li{
+    list-style: none;
+}
 .container{
     display: grid;
     height: 100vh;
