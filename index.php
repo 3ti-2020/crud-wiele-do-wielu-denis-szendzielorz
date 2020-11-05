@@ -20,7 +20,7 @@
 
 
         <div class="item b">
-                <ul>
+                <ul class="ul">
                     <form action="insert.php" method="POST">
                     <li class="li"><input type="text" name="name" ></li>
                     <li class="li"><input type="text" name="tytul" ></li>
