@@ -10,17 +10,16 @@
     <div class="container">
         <div class="item a">
 
+            <div class="nap">
             <h1>Denis Szendzielorz grupa 2</h1>
 
-            </br>
-
             <h3><a href="karty.php">LINK</a></h3>
-
+            </div>
 
         </div>
 
 
-            <div class="item b">
+        <div class="item b">
 
             <form action="insert.php" method="POST">
             <input type="text" name="name" >
@@ -28,8 +27,9 @@
             <input type="submit" value="Dodaj">
             </form>
 
-</div>
-            <div class="item c">
+        </div>
+
+        <div class="item c">
             <?php 
             $servername = 'mysql-vokun.alwaysdata.net';
             $username = 'vokun';
@@ -58,7 +58,7 @@
 
             echo("</table>");
             ?>
-            </div>
+        </div>
             <div class="item d"></div>
             <div class="item e"></div>
     </div>
