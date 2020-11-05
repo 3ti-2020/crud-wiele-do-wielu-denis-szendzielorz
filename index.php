@@ -9,14 +9,13 @@
 <body>
     <div class="container">
         <div class="item a">
-        
-        <div class="tyt">
-            <h1>Denis Szendzielorz grupa 2</h1>
-        </div>
 
-        <div class="link">
+            <h1>Denis Szendzielorz grupa 2</h1>
+
+            <br/>
+
             <h3><a href="karty.php">LINK</a></h3>
-        </div>
+
 
         </div>
 
@@ -48,6 +47,12 @@
                 echo("<td>".$row['id_autor_tytul']."</td>");
                 echo("<td>".$row['name']."</td>");
                 echo("<td>".$row['tytul']."</td>");
+                echo("<td><form action='delete.php' method='POST'>
+                            <input type='hidden' name='ID' value='$wiersz[id_autor_tytul]' placeholder='ID'></br>
+                            <input type='submit' value='Usun'> 
+                        </form>
+                    </td>");
+
                 echo("</tr>");
             }
 
