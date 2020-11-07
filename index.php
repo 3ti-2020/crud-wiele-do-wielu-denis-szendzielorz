@@ -12,7 +12,9 @@
 
             <div class="nap">
             <h1>Denis Szendzielorz grupa 2</h1>
+            </div>
 
+            <div class="lin">
             <h3><a href="karty.php">LINK</a></h3>
             </div>
 
