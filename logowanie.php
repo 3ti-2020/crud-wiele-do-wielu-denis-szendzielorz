@@ -33,6 +33,7 @@ if(isset($_SESSION['logged']))
     <link rel="stylesheet" href="logowanie.css">
 </head>
 <body>
+<div class="log">
     <form method="post" class="log">
         <label for="username">Nazwa uzytkownika:</label>
         <input type="text" name="username">
@@ -52,5 +53,6 @@ if(isset($_SESSION['logged']))
         ?>
 
     </form>
+    </div>
 </body>
 </html>
