@@ -37,10 +37,10 @@ if(isset($_SESSION['logged']))
     <form method="post" class="log">
         <label for="username">Nazwa uzytkownika:</label>
         <input type="text" name="username">
-
+        <br>
         <label for="password">Haslo:</label>
         <input type="password" name="password">
-
+        <br>
         <input type="submit" value="Zaloguj ">
 
 
