@@ -11,7 +11,8 @@ body{
     grid-area: a;
     background-color: khaki;
     display: flex;
-
+    justify-content: center;
+    align-items: center;
 }
 
 .b{
@@ -44,6 +45,7 @@ body{
     display: flex;
     position: relative;
     left: 200px;
+    top:-50px
 }
 
 .ul{
