@@ -25,7 +25,9 @@
                 <ul class="ul">
                     <form action="insert.php" method="POST">
                     <li class="li"><input type="text" name="name" ></li>
+                    <br>
                     <li class="li"><input type="text" name="tytul" ></li>
+                    <br>
                     <li class="li"><input type="submit" value="Dodaj"></li>
                     </form>
                 </ul>

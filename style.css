@@ -40,6 +40,11 @@ body{
     grid-area:e;
     background-color: lightgreen;
 }
+.ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .lin{
     display: flex;
@@ -47,6 +52,7 @@ body{
     left: 200px;
     top:50px;
 }
+
 .aa{
     padding:10px;
     background-color: indianred;
