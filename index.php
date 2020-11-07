@@ -15,7 +15,7 @@
             </div>
 
             <div class="lin">
-            <h3><a href="karty.php">LINK</a></h3>
+            <h3 class="ha"><a class = "aa" href="karty.php">LINK</a></h3>
             </div>
 
         </div>

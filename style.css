@@ -46,10 +46,22 @@ body{
     position: relative;
     left: 200px;
     top:50px;
-    padding:20px;
+    padding:10px;
     background-color: indianred;
 }
+.ha{
+    padding:10px;
+    background-color: indianred;
+    width: 10px;
+    height: 10px;
+}
 
+.aa{
+    padding:10px;
+    background-color: indianred;
+    width: 10px;
+    height: 10px;
+}
 .ul{
     list-style: none;
 }
