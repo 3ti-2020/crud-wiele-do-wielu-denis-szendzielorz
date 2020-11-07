@@ -10,6 +10,8 @@ body{
 .a{
     grid-area: a;
     background-color: khaki;
+    display: flex;
+
 }
 
 .b{
@@ -38,8 +40,10 @@ body{
     background-color: lightgreen;
 }
 
-.nap{
-
+.lin{
+    display: flex;
+    position: relative;
+    left: 200px;
 }
 
 .ul{
