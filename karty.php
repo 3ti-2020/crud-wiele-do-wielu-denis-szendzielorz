@@ -12,7 +12,11 @@
     <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-<a class="aa" href="wyloguj.php">WYLOGUJ_SIE</a>
+<div class="container">
+<div class="item a">
+<a class="aa" href="wyloguj.php">WYLOGUJ_SIE</a>qq
+</div<
+    <div class="item b">
     <div class="karta">
         <div class="obr1"></div>
 
@@ -22,22 +26,22 @@
         </div>
 
         <div class="stats">
+                <div class="stat">
+                    <div class="wart">374</div>
+                    <div class="typ">KM</div>
+                </div>
 
-        <div class="stat">
-            <div class="wart">374</div>
-            <div class="typ">KM</div>
-        </div>
+                <div class="stat">
+                    <div class="wart">630 000</div>
+                    <div class="typ">PLN</div>
+                </div>
 
-        <div class="stat">
-            <div class="wart">630 000</div>
-            <div class="typ">PLN</div>
-        </div>
+                <div class="stat">
+                    <div class="wart">250 KM/H</div>
+                    <div class="typ">VMAX</div>
+                </div>
 
-        <div class="stat">
-            <div class="wart">250 KM/H</div>
-            <div class="typ">VMAX</div>
         </div>
-    </div>
     </div>
 
 
@@ -66,7 +70,8 @@
             <div class="typ">VMAX</div>
         </div>
     </div>
-</div>  
+</div>
+</div>
 
 </body>
 </html>

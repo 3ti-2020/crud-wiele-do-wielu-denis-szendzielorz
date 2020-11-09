@@ -1,16 +1,27 @@
 body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
     width:100vw;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-image: url("https://www.moto3m.pl/wp-content/uploads/2018/04/Nowy-salon-samochod%C3%B3w-luksusowych-BW-Partners-w-Straszynie-0770.jpg");
     background-size: cover;
     background-position: center;
-    justify-content: space-around;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "a"
+    "b";
     overflow: hidden;
 }
 
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 
 
 .karta{
