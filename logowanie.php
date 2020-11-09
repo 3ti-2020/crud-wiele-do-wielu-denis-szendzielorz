@@ -1,28 +1,16 @@
 <?php
+
 session_start();
-
-$servername = 'mysql-vokun.alwaysdata.net';
-$username = 'vokun';
-$password = 'bazadanych';
-$dbname = 'vokun_baza';
-
-$conn= new mysqli($servername,$username,$password,$dbname);
-
-if(isset($_POST['username'])){
-    $username = htmlentities($_POST['username']);
-    $password = htmlentities($_POST['password']);
-    
-    $sql = "SELECT * from users WHERE username='$username' AND password='$password'";
-
-    $result = $conn->query($sql);
-    if($result){
-        $data = $result->fetch_assoc();
-        $_SESSION['logged'] = true;
-        $_SESSION['admin'] = $data['admin'];
-    } else
-        $error = true;
+if (isset($_POST["username"])) {
+    if ($_POST["username"] == "username" && $_POST["password"] == "a") {
+        $_SESSION["logowanie"] = 1;
+    }
+    else {
+        $_SESSION["logowanie"] = -1;
+    }
 }
 
+if(isset($_SESSION['logged']))
     header('Location: karty.php');
 ?>
 <!DOCTYPE html>
