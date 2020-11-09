@@ -16,6 +16,9 @@
 
             <div class="lin">
             <h3 class="ha"><a class = "aa" href="karty.php">LINK</a></h3>
+
+            <h4 class="hexColor"><span class="hex"></span><h4>
+
             <button type = "button" class = "Btn">Zmień kolor </button>
             </div>
 
