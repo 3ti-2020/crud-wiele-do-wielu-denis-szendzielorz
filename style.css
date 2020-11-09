@@ -72,12 +72,21 @@ body{
     "b c d"
     "e e e";
 }
-
-.Btn{
+.hex{
+    display: flex;
     padding:10px;
     background-color: ivory;
     width: 10px;
     height: 10px;
+    border-radius: 7px;
+}
+
+.Btn{
+    display: flex;
+    padding:10px;
+    background-color: ivory;
+    width: 20px;
+    height: 20px;
     border-radius: 7px;
     cursor: pointer;
 }
