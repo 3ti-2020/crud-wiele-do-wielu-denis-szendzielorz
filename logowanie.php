@@ -23,7 +23,6 @@ if(isset($_POST['username'])){
         $error = true;
 }
 
-if(isset($_SESSION['logged']))
     header('Location: karty.php');
 ?>
 <!DOCTYPE html>
