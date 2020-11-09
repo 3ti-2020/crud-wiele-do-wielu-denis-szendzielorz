@@ -14,7 +14,7 @@ if(isset($_POST['username'])){
     
     $sql = "SELECT * from users WHERE username='$username' AND password='$password'";
 
-    $result = $db->query($sql);
+    $result = $conn->query($sql);
     if($result){
         $data = $result->fetch_assoc();
         $_SESSION['logged'] = true;
