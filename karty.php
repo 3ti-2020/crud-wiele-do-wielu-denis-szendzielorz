@@ -14,7 +14,7 @@
 <body>
 <div class="container">
 <div class="item a">
-<a class="aa" href="wyloguj.php">WYLOGUJ SIE</a>
+<a class="aa" href="wyloguj.php">WYLOGUJ</a>
 </div>
     <div class="item b">
     <div class="karta">
