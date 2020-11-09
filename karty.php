@@ -14,8 +14,8 @@
 <body>
 <div class="container">
 <div class="item a">
-<a class="aa" href="wyloguj.php">WYLOGUJ_SIE</a>qq
-</div<
+<a class="aa" href="wyloguj.php">WYLOGUJ_SIE</a>
+</div>
     <div class="item b">
     <div class="karta">
         <div class="obr1"></div>

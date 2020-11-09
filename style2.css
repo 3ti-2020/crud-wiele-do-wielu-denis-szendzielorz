@@ -10,7 +10,7 @@ body{
     background-size: cover;
     background-position: center;
     grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 50% auto;
     grid-template-areas: "a"
     "b";
     overflow: hidden;
@@ -20,7 +20,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    flex-wrap: wrap;
 }
 
 
