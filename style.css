@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: khaki;
 }
 
 .item{
@@ -9,7 +10,6 @@ body{
 
 .a{
     grid-area: a;
-    background-color: khaki;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,6 @@ body{
 
 .b{
     grid-area:b;
-    background-color: lightgreen;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,17 +28,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightgreen;
 }
 
 .d{
     grid-area:d;
-    background-color: lightgreen;
 }
 
 .e{
     grid-area:e;
-    background-color: lightgreen;
 }
 .ul{
     display: flex;
