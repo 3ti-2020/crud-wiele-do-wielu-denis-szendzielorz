@@ -47,6 +47,7 @@ body{
 .lin{
     display: flex;
     position: relative;
+    justify-content: space-around;
     left: 200px;
     top:50px;
 }
