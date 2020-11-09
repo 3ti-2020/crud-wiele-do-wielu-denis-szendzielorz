@@ -16,10 +16,6 @@
 
             <div class="lin">
             <h3 class="ha"><a class = "aa" href="karty.php">LINK</a></h3>
-
-            <h4 class="hexColor"><span class="hex"></span></h4>
-
-            <button type = "button" class = "Btn">Zmień kolor </button>
             </div>
 
         </div>
@@ -67,7 +63,10 @@
             echo("</table>");
             ?>
         </div>
-            <div class="item d"></div>
+            <div class="item d">
+            <h4 class="hexColor">Kod koloru<span class="hex"></span><h4>
+
+            <button type = "button" class = "Btn">Zmień kolor </button></div>
             <div class="item e"></div>
     </div>
     <script src = "main.js"></script>
