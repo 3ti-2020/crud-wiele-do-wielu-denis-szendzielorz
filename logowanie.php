@@ -14,10 +14,12 @@ if(isset($_POST['username'])){
     
     $sql = "SELECT * from users WHERE username='$username' AND password='$password'";
 
-    $result = $conn->query($sql);
-    if($result)
+    $result = $db->query($sql);
+    if($result){
+        $data = $result->fetch_assoc();
         $_SESSION['logged'] = true;
-    else
+        $_SESSION['admin'] = $data['admin'];
+    } else
         $error = true;
 }
 
