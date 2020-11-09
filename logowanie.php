@@ -1,12 +1,11 @@
 <?php
-
 session_start();
 if (isset($_POST["username"])) {
     if ($_POST["username"] == "username" && $_POST["password"] == "a") {
-        $_SESSION["logowanie"] = 1;
+        $_SESSION["logged"] = 1;
     }
     else {
-        $_SESSION["logowanie"] = -1;
+        $_SESSION["logged"] = -1;
     }
 }
 
