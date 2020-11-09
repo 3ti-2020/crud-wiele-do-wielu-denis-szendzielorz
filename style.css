@@ -60,6 +60,8 @@ body{
     background-color: indianred;
     width: 10px;
     height: 10px;
+    border-radius: 7px;
+    text-decoration: none;
 }
 .ul{
     list-style: none;
@@ -73,4 +75,17 @@ body{
     grid-template-areas: "a a a"
     "b c d"
     "e e e";
+}
+
+.Btn{
+    padding:10px;
+    background-color: ivory;
+    width: 10px;
+    height: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.Btn :hover{
+    background-color: indianred;
 }

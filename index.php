@@ -16,6 +16,7 @@
 
             <div class="lin">
             <h3 class="ha"><a class = "aa" href="karty.php">LINK</a></h3>
+            <button type = "button" class = "Btn">Zmień kolor </button>
             </div>
 
         </div>
@@ -66,5 +67,6 @@
             <div class="item d"></div>
             <div class="item e"></div>
     </div>
+    <script src = "main.js"></script>
 </body>
 </html>
