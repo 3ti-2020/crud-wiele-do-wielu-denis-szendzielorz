@@ -21,8 +21,16 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
+.aa{
+    display: flex;
+    width: 10px;
+    height: 10px;
+    background-color: indianred;
+    padding: 10px;
+}
 
 .karta{
     display: grid;
