@@ -67,7 +67,12 @@
             <h4 class="hexColor">Kod koloru<span class="hex"></span><h4>
 
             <button type = "button" class = "Btn">Zmień kolor </button></div>
-            <div class="item e"></div>
+            <div class="item e">
+            <div class="dane">
+            <a class="aaa">Dane do logowania:</a>
+            <a class="aaa">Login: a</a>
+            <a class="aaa">Haslo: a</a>
+            </div>
     </div>
     <script src = "main.js"></script>
 </body>
