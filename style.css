@@ -63,11 +63,12 @@ body{
     align-items: center;
     justify-content: space-around;
     left: 1000px;
-    top:-50px;
+    top:50px;
 }
 
 .aa{
     display: flex;
+    position: relative;
     text-align: center;
     justify-content: space-around;
     padding:10px;
