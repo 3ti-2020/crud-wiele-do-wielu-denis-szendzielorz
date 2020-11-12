@@ -94,9 +94,11 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
     padding:10px;
     background-color: ivory;
-    width: 70px;
+    width: 120px;
     height: 20px;
     border-radius: 7px;
     cursor: pointer;

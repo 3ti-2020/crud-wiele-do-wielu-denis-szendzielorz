@@ -15,7 +15,8 @@
             </div>
 
             <div class="lin">
-            <h3 class="ha"><a class = "aa" href="karty.php">LINK</a></h3>
+            <h3 class="ha"><a class = "aa" href="karty.php">Karty</a></h3>
+            <h3 class="ha"><a class = "aa" href="https://github.com/3ti-2020/crud-wiele-do-wielu-denis-szendzielorz">GitHub</a></h3>
             </div>
 
         </div>
