@@ -5,7 +5,7 @@ body{
 
 .item{
     margin:1px;
-    background-color: khaki;
+    background-color: lightgreen;
 }
 
 .a{
@@ -35,7 +35,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    border-radius: 7px;
+    background-color: lawngreen;
 }
 
 .e{
@@ -84,16 +85,18 @@ body{
     display: flex;
     padding:10px;
     background-color: ivory;
-    width: 50px;
+    width: 70px;
     height: 10px;
     border-radius: 7px;
 }
 
 .Btn{
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding:10px;
     background-color: ivory;
-    width: 50px;
+    width: 70px;
     height: 20px;
     border-radius: 7px;
     cursor: pointer;
