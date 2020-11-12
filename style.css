@@ -50,19 +50,30 @@ body{
     align-items: center;
     text-align: center;
 }
-
-.lin{
+.nap{
     display: flex;
     position: relative;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.lin{
+    display: flex;
+    position: absolute;
+    align-items: center;
     justify-content: space-around;
     left: 240px;
     top:50px;
 }
 
 .aa{
+    display: flex;
+    position: absolute;
+    text-align: center;
+    justify-content: space-around;
     padding:10px;
     background-color: indianred;
-    width: 10px;
+    width: 40px;
     height: 10px;
     border-radius: 7px;
     text-decoration: none;
