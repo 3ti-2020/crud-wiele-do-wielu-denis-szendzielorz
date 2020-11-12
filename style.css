@@ -59,9 +59,11 @@ body{
 }
 .lin{
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     left: 1000px;
-    top:-50px;
+    top:50px;
 }
 
 .aa{
