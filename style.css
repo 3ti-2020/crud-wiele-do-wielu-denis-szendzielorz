@@ -58,6 +58,7 @@ body{
     text-align: center;
     flex-direction: row;
     margin: 10px;
+    list-style: none;
 }
 .nap{
     display: flex;
@@ -67,13 +68,14 @@ body{
     margin: 10px;
 }
 .lin{
+    list-style: none;
     display: flex;
     position: relative;
     justify-content: center;
     justify-content: space-between;
     align-items: center;
-    left: 650px;
-    top: 30px;
+    left: 600px;
+    top: 50px;
     margin: 20px;
 }
 
