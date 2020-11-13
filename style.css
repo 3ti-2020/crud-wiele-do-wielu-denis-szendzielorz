@@ -59,9 +59,10 @@ body{
 }
 .lin{
     display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     left: 1000px;
     top:50px;
 }
@@ -70,8 +71,6 @@ body{
     color:white;
     display: flex;
     position: relative;
-    text-align: center;
-    justify-content: space-around;
     padding:10px;
     background-color: indianred;
     width: 40px;
