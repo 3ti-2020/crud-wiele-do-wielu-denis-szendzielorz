@@ -15,15 +15,17 @@
             </div>
 
             <div class="lin">
-            <a class = "aa" href="karty.php">Karty</a>
-            <a class = "aa" href="https://github.com/3ti-2020/crud-wiele-do-wielu-denis-szendzielorz">GitHub</a>
+            <ul class="ul2">
+
+            <li><a class = "aa" href="karty.php">Karty</a></li>
+            <li<a class = "aa" href="https://github.com/3ti-2020/crud-wiele-do-wielu-denis-szendzielorz">GitHub</a></li></ul>
             </div>
 
         </div>
 
 
         <div class="item b">
-                <ul class="ul">
+                <ul class="ul1">
                     <form action="insert.php" method="POST">
                     <li class="li"><input type="text" name="name" ></li>
                     <br>
