@@ -18,7 +18,7 @@
             <ul class="ul2">
 
             <li><a class = "aa" href="karty.php">Karty</a></li>
-            <li<a class = "aa" href="https://github.com/3ti-2020/crud-wiele-do-wielu-denis-szendzielorz">GitHub</a></li></ul>
+            <li><a class = "aa" href="https://github.com/3ti-2020/crud-wiele-do-wielu-denis-szendzielorz">GitHub</a></li></ul>
             </div>
 
         </div>
