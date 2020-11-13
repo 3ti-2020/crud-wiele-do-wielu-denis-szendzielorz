@@ -59,18 +59,17 @@ body{
 }
 .lin{
     display: flex;
-    position: absolute;
+    position: relative;
     justify-content: center;
     justify-content: space-between;
     align-items: center;
     left: 1000px;
     top:50px;
+    margin: 20px;
 }
 
 .aa{
     color:white;
-    display: flex;
-    position: relative;
     padding:10px;
     background-color: indianred;
     width: 40px;
