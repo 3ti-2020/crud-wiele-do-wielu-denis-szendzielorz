@@ -53,17 +53,18 @@ body{
 
 .ul2{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     flex-direction: row;
+    margin: 10px;
 }
 .nap{
     display: flex;
     position: absolute;
-    justify-content: center;
     justify-content: space-around;
     align-items: center;
+    margin: 10px;
 }
 .lin{
     display: flex;
@@ -71,13 +72,14 @@ body{
     justify-content: center;
     justify-content: space-between;
     align-items: center;
-    left: 700px;
+    left: 6500px;
     top: 30px;
     margin: 20px;
 }
 
 .aa{
     list-style: none;
+    margin: 10px;
     color:white;
     padding:10px;
     background-color: indianred;
@@ -86,7 +88,7 @@ body{
     border-radius: 7px;
     text-decoration: none;
 }
-.ul{
+.ul1{
     list-style: none;
 }
 .container{
