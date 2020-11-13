@@ -52,18 +52,19 @@ body{
 }
 .nap{
     display: flex;
-    position: relative;
+    position: absolute;
     justify-content: center;
     justify-content: space-around;
     align-items: center;
 }
 .lin{
     display: flex;
-    position: absolute;
+    position: relative;
     justify-content: center;
     justify-content: space-between;
     align-items: center;
-    left: 500px;
+    left: 800px;
+    top: 30px;
     margin: 20px;
 }
 
