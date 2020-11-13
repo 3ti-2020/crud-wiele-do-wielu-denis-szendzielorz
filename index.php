@@ -47,7 +47,9 @@
             $result = $conn->query("SELECT `id_autor_tytul`,`name`, `tytul` FROM lib_tyt, lib_aut_tyt, lib_autor where lib_autor.id_autor = lib_aut_tyt.id_autor and lib_tyt.id_tytul = lib_aut_tyt.id_tytul");
             echo("<table class='tabela' border 1>");
             echo("<tr>
-            <th></th></tr>");
+            <th>ID</th>
+            <th>Autor</th>
+            <th>Tytuł</th></tr>");
 
             while($row = $result->fetch_assoc()){
                 echo("<tr>");

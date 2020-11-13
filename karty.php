@@ -14,7 +14,7 @@
 <body>
 <div class="container">
 <div class="item a">
-<a class="aa" href="index.php">Strona główna</a>
+<a class="aa" href="index.php">Powrót</a>
 <a class="aa" href="wyloguj.php">Wyloguj</a>
 </div>
     <div class="item b">
