@@ -25,7 +25,10 @@ body{
 }
 
 .aa{
+    color: white;
     display: flex;
+    justify-content: center;
+    align-items:center;
     width: 80px;
     height: 10px;
     background-color: indianred;
