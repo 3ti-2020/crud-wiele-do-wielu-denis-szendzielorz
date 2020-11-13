@@ -59,12 +59,11 @@ body{
 }
 .lin{
     display: flex;
-    position: relative;
+    position: absolute;
     justify-content: center;
     justify-content: space-between;
     align-items: center;
-    left: 1000px;
-    top:10px;
+    left: 500px;
     margin: 20px;
 }
 
