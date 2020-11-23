@@ -44,15 +44,15 @@
         <div class="item c">
             <?php 
 
-            $servername = 'localhost';
-            $username = 'root';
-            $password = '';
-            $dbname = 'vokun_baza';
-
-            //$servername = 'mysql-vokun.alwaysdata.net';
-            //$username = 'vokun';
-            //$password = 'bazadanych';
+            //$servername = 'localhost';
+            //$username = 'root';
+            //$password = '';
             //$dbname = 'vokun_baza';
+
+            $servername = 'mysql-vokun.alwaysdata.net';
+            $username = 'vokun';
+            $password = 'bazadanych';
+            $dbname = 'vokun_baza';
 
             $conn = new mysqli($servername, $username, $password,$dbname);
             $result = $conn->query("SELECT `id_autor_tytul`,`name`, `tytul` FROM lib_tyt, lib_aut_tyt, lib_autor where lib_autor.id_autor = lib_aut_tyt.id_autor and lib_tyt.id_tytul = lib_aut_tyt.id_tytul");
@@ -60,19 +60,24 @@
             echo("<tr>
             <th>ID</th>
             <th>Autor</th>
-            <th>Tytuł</th></tr>");
+            <th>Tytuł</th>
+            ");
+            if($isLoggedIn && $_SESSION["isAdmin"] == 1) {
+                echo("<th>Usuń</th></tr>");
+            }
 
             while($row = $result->fetch_assoc()){
                 echo("<tr>");
                 echo("<td>".$row['id_autor_tytul']."</td>");
                 echo("<td>".$row['name']."</td>");
                 echo("<td>".$row['tytul']."</td>");
+                if($isLoggedIn && $_SESSION["isAdmin"] == 1){
                 echo("<td><form action='delete.php' method='POST'>
                             <input type='hidden' name='ID' value='$row[id_autor_tytul]' placeholder='ID'>
                             <input type='submit' value='Usun'> 
                         </form>
                     </td>");
-
+                }
                 echo("</tr>");
             }
 
@@ -108,8 +113,8 @@
             <div class="item f">
                 <div class="dane">
                     <a class="aaa">Dane do logowania:</a>
-                    <a class="aaa">Login: a</a>
-                    <a class="aaa">Haslo: a</a>
+                    <a class="aaa">Login: Nauczyciel</a>
+                    <a class="aaa">Haslo: 123</a>
                 </div>
             </div>
 

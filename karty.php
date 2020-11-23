@@ -1,6 +1,6 @@
 <?php
     session_start();
-    if(!isset($_SESSION['logged']))
+    if(!isset($_SESSION['logowanie']))
         header('Location: logowanie.php');
 ?>
 <!DOCTYPE html>
@@ -15,7 +15,6 @@
 <div class="container">
 <div class="item a">
 <a class="aa" href="index.php">Powrót</a>
-<a class="aa" href="wyloguj.php">Wyloguj</a>
 </div>
     <div class="item b">
     <div class="karta">

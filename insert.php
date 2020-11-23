@@ -1,8 +1,13 @@
 <?php
-     $servername = 'mysql-vokun.alwaysdata.net';
-     $username = 'vokun';
-     $password = 'bazadanych';
-     $dbname = 'vokun_baza';
+    //$servername = 'localhost';
+    //$username = 'root';
+    //$password = '';
+    //$dbname = 'vokun_baza';
+
+    $servername = 'mysql-vokun.alwaysdata.net';
+    $username = 'vokun';
+    $password = 'bazadanych';
+    $dbname = 'vokun_baza';
 
  $conn= new mysqli($servername,$username,$password,$dbname);
 
