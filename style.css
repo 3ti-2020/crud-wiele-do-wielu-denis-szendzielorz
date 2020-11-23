@@ -35,11 +35,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 .e{
     grid-area:e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.f{
+    grid-area:f;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,7 +81,7 @@ body{
     justify-content: center;
     justify-content: space-between;
     align-items: center;
-    left: 600px;
+    left: 500px;
     top: 50px;
     margin: 20px;
 }
@@ -101,7 +108,7 @@ body{
     grid-template-rows: 35% auto 35%;
     grid-template-areas: "a a a"
     "b c d"
-    "e e e";
+    "e f f";
 }
 .hex{
     display: flex;

@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+        <?php session_start();
+            if(isset($_SESSION["logowanie"]) && $_SESSION["logowanie"] == 1) $isLoggedIn = true;
+            else $isLoggedIn = false;?>
     <div class="container">
         <div class="item a">
 
@@ -38,6 +41,12 @@
 
         <div class="item c">
             <?php 
+
+            //$servername = 'localhost';
+            //$username = 'root';
+            //$password = '';
+            //$dbname = 'vokun_baza';
+
             $servername = 'mysql-vokun.alwaysdata.net';
             $username = 'vokun';
             $password = 'bazadanych';
@@ -67,17 +76,42 @@
 
             echo("</table>");
             ?>
-        </div>
-            <div class="item d">
-            <h4 class="hexColor">Kod koloru<span class="hex"></span><h4>
-
-            <button type = "button" class = "Btn">Zmień kolor </button></div>
-            <div class="item e">
-            <div class="dane">
-            <a class="aaa">Dane do logowania:</a>
-            <a class="aaa">Login: a</a>
-            <a class="aaa">Haslo: a</a>
             </div>
+
+            <div class="item d">
+            <?php
+                if (isset($_SESSION["logowanie"]) && $_SESSION["logowanie"] == -1) {
+                echo "<p class='alert'>Niepoprawne dane</p>";
+                unset($_SESSION["logowanie"]);
+                }
+                if ($isLoggedIn) {
+                echo "<div class='buttons'><a class='button' href='logowanie.php?wyloguj=1'>Wyloguj</a></div>";
+                }
+                else {
+                echo "<form class='form' action='logowanie.php' method='POST'>
+                <input class='text' type='text' name='username' placeholder='username'></br>
+                <input class='text' type='password' name='password' placeholder='password'></br>
+                <input class='button' type='submit' value='zaloguj'>
+                </form>";
+                }
+            ?>
+            </div>
+
+            <div class="item e">
+                <h4 class="hexColor">Kod koloru<span class="hex"></span><h4>
+
+                <button type = "button" class = "Btn">Zmień kolor </button>
+            </div>
+
+            <div class="item f">
+                <div class="dane">
+                    <a class="aaa">Dane do logowania:</a>
+                    <a class="aaa">Login: a</a>
+                    <a class="aaa">Haslo: a</a>
+                </div>
+            </div>
+
+
     </div>
     <script src = "main.js"></script>
 </body>
