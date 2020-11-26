@@ -19,7 +19,7 @@
 
             <div class="lin">
             <ul class="ul2">
-
+            <li><a class = "aa" href="todo.php">TODO</a></li>
             <li><a class = "aa" href="karty.php">Karty</a></li>
             <li><a class = "aa" href="https://github.com/3ti-2020/crud-wiele-do-wielu-denis-szendzielorz">GitHub</a></li></ul>
             </div>
@@ -38,10 +38,13 @@
                         <li class="li"><input type="submit" value="Dodaj"></li>
                         </form>');
                     ?>
+
                 </ul>
         </div>
 
         <div class="item c">
+        <?php if($isLoggedIn && $_SESSION["isAdmin"] == 1) echo('<span>Podaj login wypożyczającego i kliknij wypożycz: <input type="text" class="login_input text"></span>'); ?>
+        <br/>
             <?php 
 
             //$servername = 'localhost';
@@ -63,7 +66,8 @@
             <th>Tytuł</th>
             ");
             if($isLoggedIn && $_SESSION["isAdmin"] == 1) {
-                echo("<th>Usuń</th></tr>");
+                echo("<th>Usuń</th>
+                <th>Wypożycz</th></tr>");
             }
 
             while($row = $result->fetch_assoc()){
@@ -77,11 +81,70 @@
                             <input type='submit' value='Usun'> 
                         </form>
                     </td>");
+                    echo("<td> <form action='wypozycz.php' method='POST'>
+                            <input type='hidden' name='ID' value='$row[id_autor_tytul]' placeholder='ID'>
+                            <input type='hidden' name='username'>
+                            <input type='submit' value='Wypożycz'></form></td>");
                 }
                 echo("</tr>");
             }
 
-            echo("</table>");
+            echo("</table><br/>");
+
+
+            if($isLoggedIn) {
+                if($_SESSION["isAdmin"] == 1) {
+                    $result = $conn->query("SELECT lib_aut_tyt.id_autor_tytul, name, tytul, users.username FROM lib_autor, lib_tyt, lib_aut_tyt, lib_wyp, users where lib_aut_tyt.id_autor=lib_autor.id_autor and lib_aut_tyt.id_tytul = lib_tyt.id_tytul and lib_aut_tyt.id_autor_tytul = lib_wyp.id_ksiazki and lib_wyp.id_user = users.id_user and data_odd is NULL and dost = 0");
+                }
+                else {
+                    $result = $conn->query("SELECT lib_aut_tyt.id_autor_tytul, data_wyp, data_odd, name, tytul, id_user FROM lib_autor, lib_tyt, lib_aut_tyt, lib_wyp where lib_aut_tyt.id_autor=lib_autor.id_autor and lib_aut_tyt.id_tytul = lib_tyt.id_tytul and lib_aut_tyt.id_autor_tytul = lib_wyp.id_ksiazki and id_user = ".$_SESSION["id_user"]);
+                }
+            
+                echo("<table class='table' border 1>");
+                echo("<tr>
+                <th>ID</th>
+                <th>Nazwisko</th>
+                <th>Tytul</th>");
+                if($_SESSION["isAdmin"] == 1) {
+                    echo("<th>Wypożyczający</th>");
+                    echo("<th>Usuń</th>");
+                    echo("<th>Oddaj</th>");
+                }
+                else {
+                    echo("<th>Termin</th>");
+                }
+                echo("</tr>");
+                if ($result->num_rows != 0) {
+                    while($row=$result->fetch_assoc()){
+                        
+                        echo("<tr>");
+                        echo("<td>".$row['id_autor_tytul']."</td>");
+                        echo("<td>".$row['name']."</td>");
+                        echo("<td>".$row['tytul']."</td>");
+                        if($_SESSION["isAdmin"] == 1){
+                            echo("<td>".$row["username"]."</td>");
+                            echo("<td>  <form class='form' action='delete.php' method='POST'>
+                            <input type='hidden' name='ID' value='$row[id_autor_tytul]' placeholder='ID'></br>
+                            <input type='submit' value='Usun'></form></td>");
+                           
+                        }
+                        else {
+                            if ($row["data_odd"] == NULL) {
+                                $timestamp = strtotime($row["data_wyp"]);
+                                $termin = 30 * 86400;
+                                $data = date("d.m.Y", $timestamp + $termin);
+            
+                                echo("<td>".$data."</td>");
+                            }
+                            else {
+                                echo("<td>Oddano</td>");
+                            }
+                        }
+                        echo("</tr>");
+                    }
+                }
+                echo("</table>");
+            }
             ?>
             </div>
 

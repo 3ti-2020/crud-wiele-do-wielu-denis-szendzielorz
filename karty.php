@@ -1,8 +1,4 @@
-<?php
-    session_start();
-    if(!isset($_SESSION['logowanie']))
-        header('Location: logowanie.php');
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
