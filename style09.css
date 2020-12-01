@@ -24,7 +24,8 @@ body{
 .ul2{
     list-style: none;
 }
-.question{
+.que{
+    display: flex;
     background-color: gray;
     border-radius: 10px;
 }
