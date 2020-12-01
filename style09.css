@@ -26,8 +26,12 @@ body{
 }
 .que{
     display: flex;
-    background-color: gray;
+    background-color: lightskyblue;
     border-radius: 10px;
+}
+.title{
+    text-decoration: underline;
+    text-decoration: aliceblue;
 }
 .b{
     display: flex;
