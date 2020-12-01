@@ -24,6 +24,10 @@ body{
 .ul2{
     list-style: none;
 }
+.question{
+    background-color: gray;
+    border-radius: 10px;
+}
 .b{
     display: flex;
     justify-content: flex-start;
