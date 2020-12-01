@@ -14,7 +14,7 @@ body{
     align-items: center;
     flex-direction: column;
     font-family: sans-serif;
-    text-align: center;
+    text-align: flex-start;
     list-style: none;
 }
 .ul{
