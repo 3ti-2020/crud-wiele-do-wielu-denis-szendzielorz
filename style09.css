@@ -21,7 +21,11 @@ body{
 .ul{
     list-style: none;
 }
-
+.odp{
+    border: 2px solid gray;
+    width: 200px;
+    padding: 5px;
+}
 .ul2{
     list-style: none;
 }
